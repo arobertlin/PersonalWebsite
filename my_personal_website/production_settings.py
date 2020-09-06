@@ -6,4 +6,4 @@ DEBUG = False
 SECRET_KEY = os.environ['SECRET_KEY']
 
 #update this to be heroku
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost']
+ALLOWED_HOSTS = ['0.0.0.0', '.herokuapp.com']
