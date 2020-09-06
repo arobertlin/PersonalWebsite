@@ -10,7 +10,7 @@ DEBUG = False
 SECRET_KEY = os.environ['SECRET_KEY']
 
 #update this to be heroku
-ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = ['*', '.herokuapp.com']
 
 
 # PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
