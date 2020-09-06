@@ -13,15 +13,15 @@ SECRET_KEY = os.environ['SECRET_KEY']
 ALLOWED_HOSTS = ['.herokuapp.com']
 
 
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-STATIC_URL = '/static/'
-STATIC_ROOT = "andrew-lin.herokuapp.com/static/"
-
-# BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # STATIC_URL = '/static/'
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR, 'website/static'),
-# )
+# STATIC_ROOT = "andrew-lin.herokuapp.com/static/"
 
-django_heroku.settings(locals())
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'website/static'),
+)
+
+# django_heroku.settings(locals())
