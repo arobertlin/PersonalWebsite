@@ -1,8 +1,11 @@
 from my_personal_website.common import *
 import os
+import django_heroku
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+django_heroku.settings(locals())
+
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
