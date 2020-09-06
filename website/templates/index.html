@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'website/vendor/bootstrap/css/bootstrap.min.css' %}">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="{% static '/website/favicon.ico' %}"/>
+    <!-- in your header -->
+    <title>Andrew Lin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'website/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'website/css/scrolling-nav.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Back to Top</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#work">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="bg-primary text-white">
+    <div class="container text-center">
+        <img class="rounded-circle z-depth-5" alt="profile pic" src="{% static 'website/finalpic.jpg' %}" width="30%"
+             height="30%"
+             data-holder-rendered="true">
+        <h1>Andrew Lin</h1>
+        <p class="lead">Student. Problem Solver. Developer.</p>
+
+
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>About Me</h2>
+                <p class="lead">I'm graduating with a Princeton Computer Science degree Spring 2021. While I have the
+                    classical OOP skill set in languages like Java and C, I have the most professional experience in
+                    Python for web backend, data science, instrument interfacing, and machine learning.
+                </p>
+                <p class="lead">Dallas born and raised, I acclimated to the cold Northeast by walking on the Varsity
+                    Water
+                    Polo Team and spending much of my time in a heated pool. I'll use just about any excuse to get
+                    outdoors, but some of my favorites are hiking,
+                    biking, fishing, and kayaking.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="work" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Work Experience</h2>
+                <h4 class="text-primary">Microsoft Hololens</h4>
+                <p class="lead">I worked on the laser display team of the Hololens. I ran a bring-up platform,
+                    collected, and analyzed laser color data to assist in the color calibration control loop of the
+                    display. In the process I wrote drivers for optical photodiodes and oscilloscope, firmware to
+                    control FPGA emulations of designated silicon, and python scripts to control the laser lab setup.
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eqFqtAJMtYE" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h4 class="text-primary">Sea Machines Robotics</h4>
+                <p class="lead">I worked on the autonomy team for Sea Machines, which develops Level 4 autonomy systems
+                    for marine vessels. I developed an autonomous behavior so the boat would change speeds in shallow
+                    water according to the depth sensor readings. I also contributed to an open-source project for
+                    interfacing with a gps and built a socket-based connection to seamlessly pull in computer vision
+                    data from our IP camera.
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Y94bVhEDNUc" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Projects</h2>
+                <!--<p class="lead">If "wow" is the first word out of your mouth, I'm probably interested.-->
+                <!--I'll also take on software projects that address inefficiency. I'm willing to venture-->
+                <!--into new fields like applied mechanism design and electrical engineering to create solutions.</p>-->
+
+                <h4 class="text-primary">Weight-Controlled Electric Skateboard</h4>
+                <p class="lead">Electric Skateboards provide transportation and entertainment, but are simply too
+                    difficult to control using a remote. I developed a new remoteless-control system that detects the
+                    rider's center of mass and adjusts the speed based on body position. Using classic bathroom-scale
+                    sensors
+                    and heuristics, I developed a working prototype of a hands-free electric skateboard.
+                </p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <object data="{% static 'website/WeightControlledElectricSkateboard.pdf' %}" type="application/pdf"
+                                    width="100%" height="335px">
+                                <p>It appears you don't have a PDF plugin for this browser.
+                                    No biggie... you can <a href="WeightControlledElectricSkateboard.pdf' %}">click here to
+                                        download the PDF file.</a></p>
+                            </object>
+                            <div class="text-center"><a class="btn btn-dark" target="_blank"
+                                                        href="{% static 'website/WeightControlledElectricSkateboard.pdf' %}"
+                                                        role="button">Read the Paper</a>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <video src="{% static 'website/skateboard.MOV' %}" width="100%" controls></video>
+                        </div>
+
+                        <div class="col">
+                            <img alt="skateboard" src="{% static 'website/fullboard.png' %}"
+                                 width="82.5%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+                <h4 class="text-primary">Shift Coverage Mechanism</h4>
+                <p class="lead">An email-based shift coverage system designed for 10 staff members just didn't work with
+                    almost 100. But the last thing the staff wanted was another app to keep track of. I listened to the
+                    input
+                    of the staff of Princeton's Dillon Gymnasium and designed an email-based system with
+                    a cloud-based mechanism to optimize for fairness and minimize annoying emails. I prove my system
+                    strictly dominates
+                    the current system and implemented it using Google Cloud.
+                </p>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-4">
+                            <object data="{% static 'website/ShiftCoverageMechanism.pdf' %}" type="application/pdf"
+                                    width="100%" height="335px">
+                                <p>It appears you don't have a PDF plugin for this browser.
+                                    No biggie... you can <a href="resume.pdf">click here to
+                                        download the PDF file.</a></p>
+                            </object>
+                            <div class="text-center"><a class="btn btn-dark" target="_blank"
+                                                        href="{% static 'website/ShiftCoverageMechanism.pdf' %}" role="button">Read
+                                the Paper</a>
+                            </div>
+                        </div>
+
+                        <div class="col-8">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="text-center"><img src="{% static 'website/google-appscripts-icon.svg' %}"
+                                                                      width="90%">
+                                            <p>
+                                                <small>APP SCRIPTS</small>
+                                            </p>
+                                        </div>
+                                        <div class="text-center"><img src="{% static 'website/google-cloud.svg' %}"
+                                                                      width="90%">
+                                            <p>
+                                                <small>CLOUD PLATFORM</small>
+                                            </p>
+                                        </div>
+                                        <div class="text-center"><img src="{% static 'website/google-gmail.svg' %}"
+                                                                      width="90%">
+                                            <p>
+                                                <small>GMAIL</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="text-center"><img src="{% static 'website/heroku-icon.svg' %}" width="90%">
+                                            <p>
+                                                <small>HEROKU</small>
+                                            </p>
+                                        </div>
+                                        <div class="text-center"><img src="{% static 'website/postgresql.svg' %}" width="90%">
+                                            <p>
+                                                <small>POSTGRESQL</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="text-center"><img src="{% static 'website/python.svg' %}" width="90%">
+                                            <p>
+                                                <small>PYTHON</small>
+                                            </p>
+                                        </div>
+                                        <div class="text-center"><img src="{% static 'website/flask.svg' %}" width="90%">
+                                            <p>
+                                                <small>FLASK</small>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<section id="contact" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Contact Me</h2>
+                <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US"
+                     data-type="horizontal" data-theme="dark" data-vanity="andrew-lin-177450173"><a
+                        class="LI-simple-link"
+                        href='https://www.linkedin.com/in/andrew-lin-177450173?trk=profile-badge'>Andrew Lin</a></div>
+                <p class="lead">Email: <a class="lead"
+                                          href="javascript:location='mailto:\u0061\u0072\u006c\u0069\u006e\u0040\u0070\u0072\u0069\u006e\u0063\u0065\u0074\u006f\u006e\u002e\u0065\u0064\u0075';void 0">
+                    <script type="text/javascript">document.write('\u0061\u0072\u006c\u0069\u006e\u0040\u0070\u0072\u0069\u006e\u0063\u0065\u0074\u006f\u006e\u002e\u0065\u0064\u0075')</script>
+                </a>
+                </p>
+            </div>
+
+        </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Andrew Lin 2020</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="{% static 'website/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'website/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+<!-- Plugin JavaScript -->
+<script src="{% static 'website/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+<!-- Custom JavaScript for this theme -->
+<script src="{% static 'website/js/scrolling-nav.js' %}"></script>
+
+<!-- Linked-in badge -->
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js' %}" async defer></script>
+</body>
+
+</html>
