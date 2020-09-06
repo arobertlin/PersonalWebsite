@@ -124,5 +124,5 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'website'),
 )
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
