@@ -11,3 +11,7 @@ ALLOWED_HOSTS = ['0.0.0.0', '.herokuapp.com']
 
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'website/static'),
+)
